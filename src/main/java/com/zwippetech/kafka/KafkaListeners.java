@@ -8,10 +8,6 @@ public class KafkaListeners {
     @KafkaListener(topics = "canal", groupId = "Equipo")
     void listener(String data) {
         System.out.println(data);
-        // for (int i = 0; i < 50; i++) {
-            
-        //     System.out.println("Listener recibe: " + i + " :) " );
-        // }
     }
 
 }
